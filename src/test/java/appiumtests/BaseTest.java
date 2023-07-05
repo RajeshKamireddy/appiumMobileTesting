@@ -114,8 +114,10 @@ public class BaseTest {
 		cap.setCapability("udid", "13888980160004Y");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platformVersion", "13");
-		cap.setCapability("appPackage", "com.vivo.calculator");
-		cap.setCapability("appActivity", "com.vivo.calculator.Calculator");
+//		cap.setCapability("appPackage", "com.vivo.calculator");
+//		cap.setCapability("appActivity", "com.vivo.calculator.Calculator");
+		cap.setCapability("appPackage", "com.android.chrome");
+		cap.setCapability("appActivity", "com.google.android.apps.chrome.Main");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), cap);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
